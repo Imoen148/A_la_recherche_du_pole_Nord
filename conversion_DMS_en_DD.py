@@ -2,14 +2,14 @@ import math
 
 def conv_DMS_DD(lattitude_dms, longitude_dms):
     # conversion latitude DMS en DD
-    deg_la, min_la, sec_la = lattitude_dms
-    dd_la = deg_la + (min_la/60) + (sec_la/3600)
+    deg_lat, min_lat, sec_lat = lattitude_dms
+    dd_lat = deg_lat + (min_lat/60) + (sec_lat/3600)
 
     # conversion longitude DMS en DD
-    deg_lo, min_lo, sec_lo = longitude_dms
-    dd_lo = deg_lo + (min_lo/60) + (sec_lo/3600)
+    deg_lon, min_lon, sec_lon = longitude_dms
+    dd_lon = deg_lon + (min_lon/60) + (sec_lon/3600)
 
-    return dd_la, dd_lo
+    return dd_lat, dd_lon
 
 def distance_pole_nord (coordonnee_1, coordonnée_2):
     # calcul distance entre 2 coordonée = racine carré de ((x2-x1)2 + (y2-y1)2)  
