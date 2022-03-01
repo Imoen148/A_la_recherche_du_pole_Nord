@@ -18,10 +18,10 @@ def distance_pole_nord (lat_1, long_1, lat_2, long_2):
 
 LAT_POLE_N = 86
 LONG_POLE_N = 172
-lattitude_user = 48, 51, 23.81
-longitude_user = 2, 21, 7.9999
+lattitude_dms_user = 48, 51, 23.81
+longitude_dms_user = 2, 21, 7.9999
 
-lat_u, long_u = conv_DMS_DD(lattitude_user, longitude_user)
+lat_u, long_u = conv_DMS_DD(lattitude_dms_user, longitude_dms_user)
 
 print(lat_u)
 print(long_u)
