@@ -10,4 +10,7 @@ d = 180
 e = 15
 f = 35
 
-print(conv_DMS_DD(a,b,c,d,e,f))
+lat, long = conv_DMS_DD(a,b,c,d,e,f)
+
+print(lat)
+print(long)
