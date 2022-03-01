@@ -15,14 +15,14 @@ def distance_pole_nord (lat1, long1, lat2, long2):
 
 LATPOLEN = 81.3
 LONGPOLEN = 110.8
-degLa = 60
-minLa = 20
-secLa = 28
-degLo = 180
-minLo = 15
-secLo = 35
+degLatU = 60
+minLatU = 20
+secLatU = 28
+degLongU = 180
+minLongU = 15
+secLongU = 35
 
-latU, longU = conv_DMS_DD(degLa, minLa, secLa, degLo, minLo, secLo)
+latU, longU = conv_DMS_DD(degLatU, minLatU, secLatU, degLongU, minLongU, secLongU)
 
 print(latU)
 print(longU)
