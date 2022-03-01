@@ -1,16 +1,29 @@
+from math import *
+
 def conv_DMS_DD(degLa, minLa, secLa, degLo, minLo, secLo):
     DdLa = degLa + (minLa/60) + (secLa/3600)
     DdLo = degLo + (minLo/60) + (secLo/3600)
     return DdLa, DdLo
 
-a = 60
-b = 20
-c = 28
-d = 180
-e = 15
-f = 35
+def distance_pole_nord (Lat1, Long1, lat2, long2):
+ # racine carré de ((x2-x1)2 +(y2-y1)2)  
+    distance = sqrt(((Lat1 - Long1)**2 + (lat2 - long2)**2))
+    return distance
 
-lat, long = conv_DMS_DD(a,b,c,d,e,f)
+# Coordonée du pole nord, Lat : 81.3  Long : 110.8
 
-print(lat)
-print(long)
+
+LATPOLEN = 81.3
+LONGPOLEN = 110.8
+degLa = 60
+minLa = 20
+secLa = 28
+degLo = 180
+minLo = 15
+secLo = 35
+
+latU, longU = conv_DMS_DD(degLa, minLa, secLa, degLo, minLo, secLo)
+
+print(latU)
+print(longU)
+print(distance_pole_nord(LATPOLEN, LONGPOLEN, latU, longU))
