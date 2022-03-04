@@ -25,3 +25,5 @@ coordonee_user = conv_DMS_DD(lattitude_dms_user, longitude_dms_user)
 
 print(coordonee_user)
 print(distance_pole_nord(COORDONNEE_POLE_NORD, coordonee_user))
+
+#test Micaël
