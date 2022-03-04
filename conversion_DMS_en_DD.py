@@ -26,4 +26,5 @@ coordonee_user = conv_DMS_DD(lattitude_dms_user, longitude_dms_user)
 print(coordonee_user)
 print(distance_pole_nord(COORDONNEE_POLE_NORD, coordonee_user))
 
-#test Micaël
+# La ligne 18 contient une parenthèse supplémentaire inutile.
+# La ligne 19 pourrait avoir directement le calcul sans utiliser la variable distance
