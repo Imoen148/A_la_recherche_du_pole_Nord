@@ -1,5 +1,6 @@
 import math
 
+
 def conv_DMS_DD(lattitude_dms, longitude_dms):
     # conversion latitude DMS en DD
     deg_lat, min_lat, sec_lat = lattitude_dms
@@ -10,6 +11,7 @@ def conv_DMS_DD(lattitude_dms, longitude_dms):
     dd_lon = deg_lon + (min_lon/60) + (sec_lon/3600)
 
     return dd_lat, dd_lon
+
 
 def distance_pole_nord (coordonnee_1, coordonnée_2):
     # calcul distance entre 2 coordonée = racine carré de ((x2-x1)2 + (y2-y1)2)  
